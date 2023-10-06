@@ -11,7 +11,6 @@ const authentication = (req, res, next) => {
       return res.status(404).send({ message: err.message });
     }
     req.body.userId = decoded.userId;
-    console.log("decodedData", decoded);
     next();
   });
 };

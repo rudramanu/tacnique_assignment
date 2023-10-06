@@ -16,7 +16,7 @@ app.use("/home", (req, res) => {
   res.send("APIs are working");
 });
 
-// app.use(apiLimiter);
+app.use(apiLimiter);
 app.use("/user", userRouter);
 app.use("/tasks", taskRouter);
 
